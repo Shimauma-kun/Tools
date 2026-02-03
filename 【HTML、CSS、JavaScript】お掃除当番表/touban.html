@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+    <title>今月のお掃除</title> 
+</head>
+<body>
+
+<div>
+<h2 style="text-align:center"><span id="kongetu"></span>月のお掃除</h2>
+
+<div class="box">
+    <div class="chart_souji_soto">
+        <div class="label_shouji label_shouji-1"><ui id="pid_s0"></ui></div>
+        <div class="label_shouji label_shouji-2"><ui id="pid_s1"></ui></div>
+        <div class="label_shouji label_shouji-3"><ui id="pid_s2"></ui></div>
+        <div class="label_shouji label_shouji-4"><ui id="pid_s3"></ui></div>
+        <div class="label_shouji label_shouji-5"><ui id="pid_s4"></ui></div>
+    </div>
+    <div class="chart_souji">
+    </div>
+    <div class="chart_tantou">
+    <!-- <div id="chart_tantou_css" class="chart_tantou"> -->
+        <div class="label_tantou label_tantou-1"><ui id="pid_t0"></ui></div>
+        <div class="label_tantou label_tantou-2"><ui id="pid_t1"></ui></div>
+        <div class="label_tantou label_tantou-3"><ui id="pid_t2"></ui></div>
+        <div class="label_tantou label_tantou-4"><ui id="pid_t3"></ui></div>
+        <div class="label_tantou label_tantou-5"><ui id="pid_t4"></ui></div>
+    </div>
+</div>
+
+<script src="touban.js"></script>
+
+<script type="text/javascript">
+    document.getElementById("kongetu").innerHTML = showDay();
+    function showDay() {
+        var now = new Date();
+        let month = nowdate.getMonth() + 1
+         ;
+        return month;
+    }
+</script>
+
+<link rel="stylesheet" href="touban.css">
+
+</body>
+</html>
